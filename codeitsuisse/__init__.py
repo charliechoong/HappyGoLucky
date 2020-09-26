@@ -7,6 +7,7 @@ import codeitsuisse.routes.salad_spree
 import codeitsuisse.routes.contact_trace
 import codeitsuisse.routes.olympiad_of_babylon
 import codeitsuisse.routes.clean_floor
+import codeitsuisse.routes.revisit_geometry
 
 
 
