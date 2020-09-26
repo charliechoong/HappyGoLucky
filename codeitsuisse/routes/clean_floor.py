@@ -23,7 +23,7 @@ def solve(current_state, initial_state, pos=0, num_actions=0, min_steps=float('i
         if num_actions < min_steps:
             min_steps = num_actions
         return min_steps
-    # move left
+    # move left.
     tmp_state = current_state[:]
     if pos > 0:
         if tmp_state[pos-1] == 0:
@@ -31,7 +31,7 @@ def solve(current_state, initial_state, pos=0, num_actions=0, min_steps=float('i
         else:
             tmp_state[pos-1] -= 1
         min_steps = solve(tmp_state, initial_state, pos-1, num_actions+1, min_steps) 
-    # move right
+    # move right.
     tmp_state = current_state[:]
     if pos < len(current_state) - 1:
         if tmp_state[pos+1] == 0:
