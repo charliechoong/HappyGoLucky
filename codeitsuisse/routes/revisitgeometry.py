@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 def evaluate():
     data = request.get_json();
     logging.info("data sent for evaluation {}".format(data))
-    # dummy comment
+    
     shapeCoordinates = data.get("shapeCoordinates")
     lineCoordinates = data.get("lineCoordinates")
 
@@ -36,7 +36,7 @@ def evaluate():
     p = Polygon(scoord_list)
 
     linestring = l.intersection(p)
-    #print(shape(linestring))
+    print(shape(linestring))
     points = list(shape(linestring).coords)
     
     ans = []
