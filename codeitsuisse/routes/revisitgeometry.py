@@ -2,7 +2,7 @@ import logging
 import json
 
 from flask import request, jsonify;
-
+from shapely.geometry import LineString, Polygon, shape
 from codeitsuisse import app;
 
 logger = logging.getLogger(__name__)
