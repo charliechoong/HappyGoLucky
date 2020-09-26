@@ -13,7 +13,7 @@ def evaluateFloor():
     logging.info("data sent for evaluation {}".format(data))
     answer = {}
     for item in data.get("tests"):
-        list1 = data.get("tests").get(int(item)).get("floor")
+        list1 = data.get("tests").get(item).get("floor")
         answer[item] = solve(list1,list1)
         # return json.dumps(data.get("tests").get(item).get("floor"))
     return json.dumps({"answers" : answer})
